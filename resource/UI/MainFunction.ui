@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>607</width>
+    <height>475</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(0, 0, 127);</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>10</y>
+     <width>191</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Adobe Devanagari</family>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>实验室资产管理系统</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>40</y>
+     <width>591</width>
+     <height>421</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QPushButton" name="borrow_btn">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>99999</width>
+          <height>99999</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Adobe Devanagari</family>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	background-color: rgb(33, 174, 250);
+	border-radius: 10px;
+	color: white;
+}
+QPushButton:hover {
+	background-color: rgb(72, 203, 250);
+}
+QPushButton:pressed {
+	background-color: rgb(85, 85, 255);
+}</string>
+        </property>
+        <property name="text">
+         <string>资产入库</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_12">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>99999</width>
+          <height>99999</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Adobe Devanagari</family>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	
+	
+	
+	
+	
+	background-color: rgb(85, 85, 0);
+	border-radius: 10px;
+	color: white;
+}
+QPushButton:hover {
+		
+	background-color: rgb(185, 185, 0);
+}
+QPushButton:pressed {
+	background-color: rgb(85, 85, 255);
+}</string>
+        </property>
+        <property name="text">
+         <string>资产查询</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QPushButton" name="moveitem_btn">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>99999</width>
+          <height>99999</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Adobe Devanagari</family>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	
+	background-color: rgb(0, 170, 0);
+	border-radius: 10px;
+	color: white;
+}
+QPushButton:hover {
+	
+	background-color: rgb(108, 217, 0);
+}
+QPushButton:pressed {
+	background-color: rgb(85, 85, 255);
+}</string>
+        </property>
+        <property name="text">
+         <string>资产移动</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_10">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>99999</width>
+          <height>99999</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Adobe Devanagari</family>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	
+	
+	
+	background-color: rgb(206, 137, 0);
+	border-radius: 10px;
+	color: white;
+}
+QPushButton:hover {
+	
+	
+	
+	background-color: rgb(255, 170, 0);
+}
+QPushButton:pressed {
+	background-color: rgb(85, 85, 255);
+}</string>
+        </property>
+        <property name="text">
+         <string>资产借出</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="remove_btn">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>99999</width>
+          <height>99999</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Adobe Devanagari</family>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	
+	background-color: rgb(184, 61, 184);
+	border-radius: 10px;
+	color: white;
+}
+QPushButton:hover {
+	
+	background-color: rgb(255, 85, 255);
+}
+QPushButton:pressed {
+	background-color: rgb(85, 85, 255);
+}</string>
+        </property>
+        <property name="text">
+         <string>资产报废</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QPushButton" name="datelog_btn">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>99999</width>
+          <height>99999</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Adobe Devanagari</family>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	
+	
+	
+	background-color: rgb(127, 127, 190);
+	border-radius: 10px;
+	color: white;
+}
+QPushButton:hover {
+	
+	
+	background-color: rgb(170, 170, 255);
+}
+QPushButton:pressed {
+	background-color: rgb(85, 85, 255);
+}</string>
+        </property>
+        <property name="text">
+         <string>日志查询</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="datelog_btn_3">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>99999</width>
+          <height>99999</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Adobe Devanagari</family>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	
+	
+	
+	background-color: rgb(206, 137, 0);
+	border-radius: 10px;
+	color: white;
+}
+QPushButton:hover {
+	
+	
+	
+	background-color: rgb(255, 170, 0);
+}
+QPushButton:pressed {
+	background-color: rgb(85, 85, 255);
+}</string>
+        </property>
+        <property name="text">
+         <string>输出excel</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="exit_buttuon">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>99999</width>
+          <height>99999</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Adobe Devanagari</family>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	
+	background-color: rgb(204, 0, 0);
+	border-radius: 10px;
+	color: white;
+}
+QPushButton:hover {
+	
+	background-color: rgb(255, 0, 0);
+}
+QPushButton:pressed {
+	background-color: rgb(85, 85, 255);
+}</string>
+        </property>
+        <property name="text">
+         <string>退出系统</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>exit_buttuon</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>show_login()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>478</x>
+     <y>399</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>460</x>
+     <y>461</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>datelog_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>show_datalog()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>136</x>
+     <y>393</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>121</x>
+     <y>461</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>remove_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>remove_item()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>468</x>
+     <y>250</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>605</x>
+     <y>241</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>moveitem_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>move_item()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>89</x>
+     <y>255</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>0</x>
+     <y>255</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_10</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>borrow_item()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>400</x>
+     <y>122</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>605</x>
+     <y>129</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>borrow_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>add_item()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>134</x>
+     <y>111</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>0</x>
+     <y>101</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>datelog_btn_3</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>output_excel()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>299</x>
+     <y>391</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>305</x>
+     <y>474</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_12</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>check_serch()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>359</x>
+     <y>290</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>699</x>
+     <y>281</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>show_login()</slot>
+  <slot>show_datalog()</slot>
+  <slot>remove_item()</slot>
+  <slot>move_item()</slot>
+  <slot>borrow_item()</slot>
+  <slot>add_item()</slot>
+  <slot>output_excel()</slot>
+  <slot>check_serch()</slot>
+ </slots>
+</ui>

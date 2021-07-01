@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>789</width>
+    <height>716</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="sizeGripEnabled">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>771</width>
+     <height>711</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout" stretch="6,1">
+    <item>
+     <widget class="QTableView" name="mytableview">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 170, 0);</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout" stretch="1,0,0,1,1,1,1,1,0,2">
+      <property name="spacing">
+       <number>1</number>
+      </property>
+      <item>
+       <widget class="QPushButton" name="clean_bt">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>20</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	background-color: rgb(33, 174, 250);
+	border-radius: 15px;
+	color: white;
+}
+QPushButton:hover {
+	background-color: rgb(72, 203, 250);
+}
+QPushButton:pressed {
+	background-color: rgb(85, 85, 255);
+}</string>
+        </property>
+        <property name="text">
+         <string>清空列表</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../login.qrc">
+          <normaloff>:/1/images/dp.png</normaloff>:/1/images/dp.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="addline_bt">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>20</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	background-color: rgb(33, 174, 250);
+	border-radius: 15px;
+	color: white;
+}
+QPushButton:hover {
+	background-color: rgb(72, 203, 250);
+}
+QPushButton:pressed {
+	background-color: rgb(85, 85, 255);
+}</string>
+        </property>
+        <property name="text">
+         <string>增加一行</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../login.qrc">
+          <normaloff>:/1/images/dp.png</normaloff>:/1/images/dp.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="delline_bt">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>20</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	background-color: rgb(33, 174, 250);
+	border-radius: 15px;
+	color: white;
+}
+QPushButton:hover {
+	background-color: rgb(72, 203, 250);
+}
+QPushButton:pressed {
+	background-color: rgb(85, 85, 255);
+}</string>
+        </property>
+        <property name="text">
+         <string>删除一行</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../login.qrc">
+          <normaloff>:/1/images/dp.png</normaloff>:/1/images/dp.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="borrow_bt">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>20</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	background-color: rgb(33, 174, 250);
+	border-radius: 15px;
+	color: white;
+}
+QPushButton:hover {
+	background-color: rgb(72, 203, 250);
+}
+QPushButton:pressed {
+	background-color: rgb(85, 85, 255);
+}</string>
+        </property>
+        <property name="text">
+         <string>借出</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../login.qrc">
+          <normaloff>:/1/images/dp.png</normaloff>:/1/images/dp.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="move_bt">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>20</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	background-color: rgb(33, 174, 250);
+	border-radius: 15px;
+	color: white;
+}
+QPushButton:hover {
+	background-color: rgb(72, 203, 250);
+}
+QPushButton:pressed {
+	background-color: rgb(85, 85, 255);
+}</string>
+        </property>
+        <property name="text">
+         <string>转移</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../login.qrc">
+          <normaloff>:/1/images/dp.png</normaloff>:/1/images/dp.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="scrapped_bt">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>20</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	background-color: rgb(33, 174, 250);
+	border-radius: 15px;
+	color: white;
+}
+QPushButton:hover {
+	background-color: rgb(72, 203, 250);
+}
+QPushButton:pressed {
+	background-color: rgb(85, 85, 255);
+}</string>
+        </property>
+        <property name="text">
+         <string>待报废</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../login.qrc">
+          <normaloff>:/1/images/dp.png</normaloff>:/1/images/dp.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="repair_bt">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>20</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	background-color: rgb(33, 174, 250);
+	border-radius: 15px;
+	color: white;
+}
+QPushButton:hover {
+	background-color: rgb(72, 203, 250);
+}
+QPushButton:pressed {
+	background-color: rgb(85, 85, 255);
+}</string>
+        </property>
+        <property name="text">
+         <string>待维修</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../login.qrc">
+          <normaloff>:/1/images/dp.png</normaloff>:/1/images/dp.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="maintain_bt">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>20</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	background-color: rgb(33, 174, 250);
+	border-radius: 15px;
+	color: white;
+}
+QPushButton:hover {
+	background-color: rgb(72, 203, 250);
+}
+QPushButton:pressed {
+	background-color: rgb(85, 85, 255);
+}</string>
+        </property>
+        <property name="text">
+         <string>维护保养</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../login.qrc">
+          <normaloff>:/1/images/dp.png</normaloff>:/1/images/dp.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="output_bt">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>20</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	background-color: rgb(33, 174, 250);
+	border-radius: 15px;
+	color: white;
+}
+QPushButton:hover {
+	background-color: rgb(72, 203, 250);
+}
+QPushButton:pressed {
+	background-color: rgb(85, 85, 255);
+}</string>
+        </property>
+        <property name="text">
+         <string>输出excel</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../login.qrc">
+          <normaloff>:/1/images/dp.png</normaloff>:/1/images/dp.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="upload_bt">
+        <property name="minimumSize">
+         <size>
+          <width>20</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	
+	background-color: rgb(189, 63, 0);
+	border-radius: 15px;
+	color: white;
+}
+QPushButton:hover {
+	
+	background-color: rgb(255, 85, 0);
+}
+QPushButton:pressed {
+	background-color: rgb(85, 85, 255);
+}</string>
+        </property>
+        <property name="text">
+         <string>同步修改</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../login.qrc">
+          <normaloff>:/1/images/dp.png</normaloff>:/1/images/dp.png</iconset>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../login.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>clean_bt</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>check_clean()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>703</x>
+     <y>51</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>892</x>
+     <y>40</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>addline_bt</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>check_delline()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>722</x>
+     <y>123</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>868</x>
+     <y>126</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>delline_bt</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>check_delline()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>743</x>
+     <y>196</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>848</x>
+     <y>197</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>borrow_bt</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>check_borrow()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>741</x>
+     <y>269</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>848</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>move_bt</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>check_move()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>768</x>
+     <y>345</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>855</x>
+     <y>354</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>scrapped_bt</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>check_scrapped()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>768</x>
+     <y>414</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>868</x>
+     <y>443</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>repair_bt</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>check_repair()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>768</x>
+     <y>483</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>838</x>
+     <y>479</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>maintain_bt</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>check_maintain()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>768</x>
+     <y>552</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>843</x>
+     <y>551</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>upload_bt</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>cheack_upload()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>768</x>
+     <y>690</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>854</x>
+     <y>627</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>output_bt</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>check_output()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>735</x>
+     <y>602</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>867</x>
+     <y>606</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>check_clean()</slot>
+  <slot>check_addline()</slot>
+  <slot>check_delline()</slot>
+  <slot>check_borrow()</slot>
+  <slot>check_move()</slot>
+  <slot>check_scrapped()</slot>
+  <slot>check_repair()</slot>
+  <slot>check_maintain()</slot>
+  <slot>cheack_upload()</slot>
+  <slot>check_output()</slot>
+ </slots>
+</ui>

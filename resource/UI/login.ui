@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>登录</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout" stretch="3,5">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QWidget" name="widget" native="true">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(170, 170, 127);</string>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="login_top_bg_">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="widget_2" native="true">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="1,2,1">
+      <item alignment="Qt::AlignLeft|Qt::AlignBottom">
+       <widget class="QPushButton" name="pushButton_2">
+        <property name="styleSheet">
+         <string notr="true">color: rgb(138, 138, 138)</string>
+        </property>
+        <property name="text">
+         <string>注册账号</string>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QGridLayout" name="gridLayout">
+        <property name="topMargin">
+         <number>30</number>
+        </property>
+        <property name="bottomMargin">
+         <number>10</number>
+        </property>
+        <property name="verticalSpacing">
+         <number>10</number>
+        </property>
+        <item row="1" column="0" colspan="2">
+         <widget class="QLineEdit" name="passwd_line">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>45</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit {
+	font-size: 20px;
+	border: none;
+	border-bottom: 1px solid lightgray;
+	background-color: transparent;
+}
+QLineEdit:hover {
+	border-bottom: 1px solid gray;
+}
+QLineEdit:focus {
+	border-bottom: 1px solid rgb(18, 183, 245);
+}
+</string>
+          </property>
+          <property name="echoMode">
+           <enum>QLineEdit::PasswordEchoOnEdit</enum>
+          </property>
+          <property name="clearButtonEnabled">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QCheckBox" name="auto_log">
+          <property name="styleSheet">
+           <string notr="true">color: rgb(149, 149, 149);</string>
+          </property>
+          <property name="text">
+           <string>自动登录</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0" colspan="2">
+         <widget class="QComboBox" name="account_Box">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>45</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QComboBox {
+	font-size: 20px;
+	border: none;
+	border-bottom: 1px solid lightgray;
+	background-color: transparent;
+}
+QComboBox:hover {
+	border-bottom: 1px solid gray;
+}
+QComboBox:focus {
+	border-bottom: 1px solid rgb(18, 183, 245);
+}
+QComboBox::drop-down {
+	background-color: transparent;    
+	width: 60px;
+	height: 40px;               
+}
+QComboBox::down-arrow {
+	
+	image: url(:/1/images/down_arrow.png);
+	width: 60px;
+	height: 20px;
+}
+QComboBox QAbstractItemView {
+	min-height: 60px;
+}
+QComboBox QAbstractItemView:item {
+	color: lightblue;
+}</string>
+          </property>
+          <property name="editable">
+           <bool>true</bool>
+          </property>
+          <item>
+           <property name="text">
+            <string>yang</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>wudianshiyanshi</string>
+           </property>
+           <property name="icon">
+            <iconset resource="../login.qrc">
+             <normaloff>:/1/images/th_untangle.png</normaloff>:/1/images/th_untangle.png</iconset>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>931363918</string>
+           </property>
+           <property name="icon">
+            <iconset resource="../login.qrc">
+             <normaloff>:/1/images/管它.png</normaloff>:/1/images/管它.png</iconset>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QCheckBox" name="hold_passwd">
+          <property name="styleSheet">
+           <string notr="true">color: rgb(149, 149, 149);</string>
+          </property>
+          <property name="text">
+           <string>记住密码</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0" colspan="2">
+         <widget class="QPushButton" name="login_button">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>50</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>新宋体</family>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+	background-color: rgb(33, 174, 250);
+	border-radius: 5px;
+	color: white;
+}
+QPushButton:hover {
+	background-color: rgb(72, 203, 250);
+}
+QPushButton:pressed {
+	background-color: rgb(85, 85, 255);
+}</string>
+          </property>
+          <property name="text">
+           <string>安全登录</string>
+          </property>
+          <property name="icon">
+           <iconset resource="../login.qrc">
+            <normaloff>:/1/images/dp.png</normaloff>:/1/images/dp.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>30</width>
+            <height>50</height>
+           </size>
+          </property>
+          <property name="shortcut">
+           <string>Return</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item alignment="Qt::AlignRight|Qt::AlignBottom">
+       <widget class="QPushButton" name="pushButton_3">
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>100</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/1/images/gui_qq_group.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>account_Box</tabstop>
+  <tabstop>passwd_line</tabstop>
+  <tabstop>auto_log</tabstop>
+  <tabstop>hold_passwd</tabstop>
+  <tabstop>login_button</tabstop>
+  <tabstop>pushButton_2</tabstop>
+  <tabstop>pushButton_3</tabstop>
+ </tabstops>
+ <resources>
+  <include location="../login.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>account_Box</sender>
+   <signal>editTextChanged(QString)</signal>
+   <receiver>Form</receiver>
+   <slot>enable_login_btn()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>571</x>
+     <y>317</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>838</x>
+     <y>304</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>passwd_line</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>Form</receiver>
+   <slot>enable_login_btn()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>519</x>
+     <y>387</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>844</x>
+     <y>394</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>join_qq_group()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>748</x>
+     <y>545</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>843</x>
+     <y>548</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>show_register()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>48</x>
+     <y>576</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>42</x>
+     <y>660</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>login_button</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>check_login()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>235</x>
+     <y>529</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>240</x>
+     <y>654</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>auto_log</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>Form</receiver>
+   <slot>auto_login()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>230</x>
+     <y>456</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-66</x>
+     <y>413</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>hold_passwd</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>Form</receiver>
+   <slot>rememble_passwd()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>446</x>
+     <y>462</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>847</x>
+     <y>442</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>show_register()</slot>
+  <slot>join_qq_group()</slot>
+  <slot>enable_login_btn()</slot>
+  <slot>check_login()</slot>
+  <slot>auto_login()</slot>
+  <slot>rememble_passwd()</slot>
+ </slots>
+</ui>

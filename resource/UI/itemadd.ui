@@ -1,0 +1,1186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>850</width>
+    <height>650</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>850</width>
+    <height>650</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>850</width>
+    <height>650</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 127);</string>
+  </property>
+  <widget class="QComboBox" name="itemname_cb">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>80</y>
+     <width>171</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox {
+	font-size: 20px;
+	border: none;
+	border-bottom: 1px solid lightgray;
+	background-color: transparent;
+}
+QComboBox:hover {
+	border-bottom: 1px solid gray;
+}
+QComboBox:focus {
+	border-bottom: 1px solid rgb(18, 183, 245);
+}
+QComboBox::drop-down {
+	background-color: transparent;    
+	width: 60px;
+	height: 40px;               
+}
+QComboBox::down-arrow {
+	
+	image: url(:/1/images/down_arrow.png);
+	width: 60px;
+	height: 20px;
+}
+QComboBox QAbstractItemView {
+	min-height: 60px;
+}
+QComboBox QAbstractItemView:item {
+	color: lightblue;
+}</string>
+   </property>
+   <property name="editable">
+    <bool>true</bool>
+   </property>
+   <item>
+    <property name="text">
+     <string>电脑</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QComboBox" name="itemID_cb">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>140</y>
+     <width>171</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox {
+	font-size: 20px;
+	border: none;
+	border-bottom: 1px solid lightgray;
+	background-color: transparent;
+}
+QComboBox:hover {
+	border-bottom: 1px solid gray;
+}
+QComboBox:focus {
+	border-bottom: 1px solid rgb(18, 183, 245);
+}
+QComboBox::drop-down {
+	background-color: transparent;    
+	width: 60px;
+	height: 40px;               
+}
+QComboBox::down-arrow {
+	
+	image: url(:/1/images/down_arrow.png);
+	width: 60px;
+	height: 20px;
+}
+QComboBox QAbstractItemView {
+	min-height: 60px;
+}
+QComboBox QAbstractItemView:item {
+	color: lightblue;
+}</string>
+   </property>
+   <property name="editable">
+    <bool>true</bool>
+   </property>
+   <item>
+    <property name="text">
+     <string>20150011</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QComboBox" name="item_loca_cb">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>200</y>
+     <width>171</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox {
+	font-size: 20px;
+	border: none;
+	border-bottom: 1px solid lightgray;
+	background-color: transparent;
+}
+QComboBox:hover {
+	border-bottom: 1px solid gray;
+}
+QComboBox:focus {
+	border-bottom: 1px solid rgb(18, 183, 245);
+}
+QComboBox::drop-down {
+	background-color: transparent;    
+	width: 60px;
+	height: 40px;               
+}
+QComboBox::down-arrow {
+	
+	image: url(:/1/images/down_arrow.png);
+	width: 60px;
+	height: 20px;
+}
+QComboBox QAbstractItemView {
+	min-height: 60px;
+}
+QComboBox QAbstractItemView:item {
+	color: lightblue;
+}</string>
+   </property>
+   <property name="editable">
+    <bool>true</bool>
+   </property>
+   <item>
+    <property name="text">
+     <string>1-101</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>90</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>宋体</family>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 0, 0);</string>
+   </property>
+   <property name="text">
+    <string>资产名称：</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>140</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>宋体</family>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 0, 0);</string>
+   </property>
+   <property name="text">
+    <string>资产编号：</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>200</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>宋体</family>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 0, 0);</string>
+   </property>
+   <property name="text">
+    <string>存放地点：</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="item_brand_cb">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>260</y>
+     <width>171</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox {
+	font-size: 20px;
+	border: none;
+	border-bottom: 1px solid lightgray;
+	background-color: transparent;
+}
+QComboBox:hover {
+	border-bottom: 1px solid gray;
+}
+QComboBox:focus {
+	border-bottom: 1px solid rgb(18, 183, 245);
+}
+QComboBox::drop-down {
+	background-color: transparent;    
+	width: 60px;
+	height: 40px;               
+}
+QComboBox::down-arrow {
+	
+	image: url(:/1/images/down_arrow.png);
+	width: 60px;
+	height: 20px;
+}
+QComboBox QAbstractItemView {
+	min-height: 60px;
+}
+QComboBox QAbstractItemView:item {
+	color: lightblue;
+}</string>
+   </property>
+   <property name="editable">
+    <bool>true</bool>
+   </property>
+   <item>
+    <property name="text">
+     <string>戴尔</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>260</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>宋体</family>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>品  牌：</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="item_model_cb">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>320</y>
+     <width>171</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox {
+	font-size: 20px;
+	border: none;
+	border-bottom: 1px solid lightgray;
+	background-color: transparent;
+}
+QComboBox:hover {
+	border-bottom: 1px solid gray;
+}
+QComboBox:focus {
+	border-bottom: 1px solid rgb(18, 183, 245);
+}
+QComboBox::drop-down {
+	background-color: transparent;    
+	width: 60px;
+	height: 40px;               
+}
+QComboBox::down-arrow {
+	
+	image: url(:/1/images/down_arrow.png);
+	width: 60px;
+	height: 20px;
+}
+QComboBox QAbstractItemView {
+	min-height: 60px;
+}
+QComboBox QAbstractItemView:item {
+	color: lightblue;
+}</string>
+   </property>
+   <property name="editable">
+    <bool>true</bool>
+   </property>
+   <item>
+    <property name="text">
+     <string>EXP-9980</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>320</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>宋体</family>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>规格型号：</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="item_value_cb">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>380</y>
+     <width>171</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox {
+	font-size: 20px;
+	border: none;
+	border-bottom: 1px solid lightgray;
+	background-color: transparent;
+}
+QComboBox:hover {
+	border-bottom: 1px solid gray;
+}
+QComboBox:focus {
+	border-bottom: 1px solid rgb(18, 183, 245);
+}
+QComboBox::drop-down {
+	background-color: transparent;    
+	width: 60px;
+	height: 40px;               
+}
+QComboBox::down-arrow {
+	
+	image: url(:/1/images/down_arrow.png);
+	width: 60px;
+	height: 20px;
+}
+QComboBox QAbstractItemView {
+	min-height: 60px;
+}
+QComboBox QAbstractItemView:item {
+	color: lightblue;
+}</string>
+   </property>
+   <property name="editable">
+    <bool>true</bool>
+   </property>
+   <item>
+    <property name="text">
+     <string>20000.00元</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>380</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>宋体</family>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>价  值：</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>440</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>宋体</family>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>取得日期：</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="item_department">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>500</y>
+     <width>171</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox {
+	font-size: 20px;
+	border: none;
+	border-bottom: 1px solid lightgray;
+	background-color: transparent;
+}
+QComboBox:hover {
+	border-bottom: 1px solid gray;
+}
+QComboBox:focus {
+	border-bottom: 1px solid rgb(18, 183, 245);
+}
+QComboBox::drop-down {
+	background-color: transparent;    
+	width: 60px;
+	height: 40px;               
+}
+QComboBox::down-arrow {
+	
+	image: url(:/1/images/down_arrow.png);
+	width: 60px;
+	height: 20px;
+}
+QComboBox QAbstractItemView {
+	min-height: 60px;
+}
+QComboBox QAbstractItemView:item {
+	color: lightblue;
+}</string>
+   </property>
+   <property name="editable">
+    <bool>true</bool>
+   </property>
+   <item>
+    <property name="text">
+     <string>物电学院</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>500</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>宋体</family>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>使用部门：</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>140</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>宋体</family>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>使用状况：</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="item_user_cb">
+   <property name="geometry">
+    <rect>
+     <x>500</x>
+     <y>80</y>
+     <width>171</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox {
+	font-size: 20px;
+	border: none;
+	border-bottom: 1px solid lightgray;
+	background-color: transparent;
+}
+QComboBox:hover {
+	border-bottom: 1px solid gray;
+}
+QComboBox:focus {
+	border-bottom: 1px solid rgb(18, 183, 245);
+}
+QComboBox::drop-down {
+	background-color: transparent;    
+	width: 60px;
+	height: 40px;               
+}
+QComboBox::down-arrow {
+	
+	image: url(:/1/images/down_arrow.png);
+	width: 60px;
+	height: 20px;
+}
+QComboBox QAbstractItemView {
+	min-height: 60px;
+}
+QComboBox QAbstractItemView:item {
+	color: lightblue;
+}</string>
+   </property>
+   <property name="editable">
+    <bool>true</bool>
+   </property>
+   <item>
+    <property name="text">
+     <string>杨程钧</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="label_10">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>320</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>宋体</family>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>备注信息：</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="item_contractNO_cb">
+   <property name="geometry">
+    <rect>
+     <x>500</x>
+     <y>200</y>
+     <width>171</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox {
+	font-size: 20px;
+	border: none;
+	border-bottom: 1px solid lightgray;
+	background-color: transparent;
+}
+QComboBox:hover {
+	border-bottom: 1px solid gray;
+}
+QComboBox:focus {
+	border-bottom: 1px solid rgb(18, 183, 245);
+}
+QComboBox::drop-down {
+	background-color: transparent;    
+	width: 60px;
+	height: 40px;               
+}
+QComboBox::down-arrow {
+	
+	image: url(:/1/images/down_arrow.png);
+	width: 60px;
+	height: 20px;
+}
+QComboBox QAbstractItemView {
+	min-height: 60px;
+}
+QComboBox QAbstractItemView:item {
+	color: lightblue;
+}</string>
+   </property>
+   <property name="editable">
+    <bool>true</bool>
+   </property>
+   <item>
+    <property name="text">
+     <string>A998989</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="label_13">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>90</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>宋体</family>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>使用人：</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_14">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>200</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>宋体</family>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>合同编号：</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="item_unit_cb">
+   <property name="geometry">
+    <rect>
+     <x>500</x>
+     <y>260</y>
+     <width>171</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox {
+	font-size: 20px;
+	border: none;
+	border-bottom: 1px solid lightgray;
+	background-color: transparent;
+}
+QComboBox:hover {
+	border-bottom: 1px solid gray;
+}
+QComboBox:focus {
+	border-bottom: 1px solid rgb(18, 183, 245);
+}
+QComboBox::drop-down {
+	background-color: transparent;    
+	width: 60px;
+	height: 40px;               
+}
+QComboBox::down-arrow {
+	
+	image: url(:/1/images/down_arrow.png);
+	width: 60px;
+	height: 20px;
+}
+QComboBox QAbstractItemView {
+	min-height: 60px;
+}
+QComboBox QAbstractItemView:item {
+	color: lightblue;
+}</string>
+   </property>
+   <property name="editable">
+    <bool>true</bool>
+   </property>
+   <item>
+    <property name="text">
+     <string>台</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QComboBox" name="item_condition_cb">
+   <property name="geometry">
+    <rect>
+     <x>500</x>
+     <y>140</y>
+     <width>171</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox {
+	font-size: 20px;
+	border: none;
+	border-bottom: 1px solid lightgray;
+	background-color: transparent;
+}
+QComboBox:hover {
+	border-bottom: 1px solid gray;
+}
+QComboBox:focus {
+	border-bottom: 1px solid rgb(18, 183, 245);
+}
+QComboBox::drop-down {
+	background-color: transparent;    
+	width: 60px;
+	height: 40px;               
+}
+QComboBox::down-arrow {
+	
+	image: url(:/1/images/down_arrow.png);
+	width: 60px;
+	height: 20px;
+}
+QComboBox QAbstractItemView {
+	min-height: 60px;
+}
+QComboBox QAbstractItemView:item {
+	color: lightblue;
+}</string>
+   </property>
+   <property name="editable">
+    <bool>true</bool>
+   </property>
+   <item>
+    <property name="text">
+     <string>在用</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="label_16">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>260</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>宋体</family>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>计量单位：</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_11">
+   <property name="geometry">
+    <rect>
+     <x>690</x>
+     <y>80</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>宋体</family>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>批量导入：</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="added_number_sb">
+   <property name="geometry">
+    <rect>
+     <x>690</x>
+     <y>130</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="minimum">
+    <number>1</number>
+   </property>
+   <property name="maximum">
+    <number>999999</number>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="daoru_btn">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>700</x>
+     <y>190</y>
+     <width>111</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+	background-color: rgb(33, 174, 250);
+	border-radius: 10px;
+	color: white;
+}
+QPushButton:hover {
+	background-color: rgb(72, 203, 250);
+}
+QPushButton:pressed {
+	background-color: rgb(85, 85, 255);
+}</string>
+   </property>
+   <property name="text">
+    <string>导入</string>
+   </property>
+   <property name="icon">
+    <iconset resource="../login.qrc">
+     <normaloff>:/1/images/dp.png</normaloff>:/1/images/dp.png</iconset>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="tipEdit_te">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>370</y>
+     <width>301</width>
+     <height>181</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>560</y>
+     <width>261</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+	background-color: rgb(33, 174, 250);
+	border-radius: 5px;
+	color: white;
+}
+QPushButton:hover {
+	background-color: rgb(72, 203, 250);
+}
+QPushButton:pressed {
+	background-color: rgb(85, 85, 255);
+}</string>
+   </property>
+   <property name="text">
+    <string>显示近期导入</string>
+   </property>
+   <property name="flat">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_12">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>10</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Adobe Devanagari</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>资产入库</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_3">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>75</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+	background-color: rgb(33, 174, 250);
+	border-radius: 10px;
+	color: white;
+}
+QPushButton:hover {
+	background-color: rgb(72, 203, 250);
+}
+QPushButton:pressed {
+	background-color: rgb(85, 85, 255);
+}</string>
+   </property>
+   <property name="text">
+    <string>返回主界面</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="item_changedata_cb">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>440</y>
+     <width>171</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox {
+	font-size: 20px;
+	border: none;
+	border-bottom: 1px solid lightgray;
+	background-color: transparent;
+}
+QComboBox:hover {
+	border-bottom: 1px solid gray;
+}
+QComboBox:focus {
+	border-bottom: 1px solid rgb(18, 183, 245);
+}
+QComboBox::drop-down {
+	background-color: transparent;    
+	width: 60px;
+	height: 40px;               
+}
+QComboBox::down-arrow {
+	
+	image: url(:/1/images/down_arrow.png);
+	width: 60px;
+	height: 20px;
+}
+QComboBox QAbstractItemView {
+	min-height: 60px;
+}
+QComboBox QAbstractItemView:item {
+	color: lightblue;
+}</string>
+   </property>
+   <property name="editable">
+    <bool>true</bool>
+   </property>
+   <item>
+    <property name="text">
+     <string notr="true">Now</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QSpinBox" name="added_step_sb">
+   <property name="geometry">
+    <rect>
+     <x>690</x>
+     <y>290</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="minimum">
+    <number>1</number>
+   </property>
+   <property name="maximum">
+    <number>999999</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_15">
+   <property name="geometry">
+    <rect>
+     <x>690</x>
+     <y>240</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>宋体</family>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>编号步长：</string>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../login.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>pushButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>back_mainfunction()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>37</x>
+     <y>32</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-59</x>
+     <y>34</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>itemname_cb</sender>
+   <signal>currentTextChanged(QString)</signal>
+   <receiver>Form</receiver>
+   <slot>added_btn_enable()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>188</x>
+     <y>114</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-85</x>
+     <y>98</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>itemID_cb</sender>
+   <signal>editTextChanged(QString)</signal>
+   <receiver>Form</receiver>
+   <slot>added_btn_enable()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>192</x>
+     <y>170</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-32</x>
+     <y>174</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>item_loca_cb</sender>
+   <signal>editTextChanged(QString)</signal>
+   <receiver>Form</receiver>
+   <slot>added_btn_enable()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>194</x>
+     <y>225</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-39</x>
+     <y>225</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>added_number_sb</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>Form</receiver>
+   <slot>added_btn_enable()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>790</x>
+     <y>162</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>781</x>
+     <y>-131</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>daoru_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>added_check()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>770</x>
+     <y>243</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>892</x>
+     <y>236</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>recently_added()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>438</x>
+     <y>614</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>434</x>
+     <y>703</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>back_mainfunction()</slot>
+  <slot>recently_added()</slot>
+  <slot>added_check()</slot>
+  <slot>added_btn_enable()</slot>
+ </slots>
+</ui>

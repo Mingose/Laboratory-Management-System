@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>850</width>
+    <height>650</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>850</width>
+    <height>650</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>850</width>
+    <height>650</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(203, 203, 0);</string>
+  </property>
+  <widget class="QComboBox" name="itemname_cb">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>80</y>
+     <width>441</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox {
+	font-size: 20px;
+	border: none;
+	border-bottom: 1px solid lightgray;
+	background-color: transparent;
+}
+QComboBox:hover {
+	border-bottom: 1px solid gray;
+}
+QComboBox:focus {
+	border-bottom: 1px solid rgb(18, 183, 245);
+}
+QComboBox::drop-down {
+	background-color: transparent;    
+	width: 60px;
+	height: 40px;               
+}
+QComboBox::down-arrow {
+	
+	image: url(:/1/images/down_arrow.png);
+	width: 60px;
+	height: 20px;
+}
+QComboBox QAbstractItemView {
+	min-height: 60px;
+}
+QComboBox QAbstractItemView:item {
+	color: lightblue;
+}</string>
+   </property>
+   <property name="editable">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="itemID_cb">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>140</y>
+     <width>441</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox {
+	font-size: 20px;
+	border: none;
+	border-bottom: 1px solid lightgray;
+	background-color: transparent;
+}
+QComboBox:hover {
+	border-bottom: 1px solid gray;
+}
+QComboBox:focus {
+	border-bottom: 1px solid rgb(18, 183, 245);
+}
+QComboBox::drop-down {
+	background-color: transparent;    
+	width: 60px;
+	height: 40px;               
+}
+QComboBox::down-arrow {
+	
+	image: url(:/1/images/down_arrow.png);
+	width: 60px;
+	height: 20px;
+}
+QComboBox QAbstractItemView {
+	min-height: 60px;
+}
+QComboBox QAbstractItemView:item {
+	color: lightblue;
+}</string>
+   </property>
+   <property name="editable">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="item_loca_cb">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>200</y>
+     <width>441</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox {
+	font-size: 20px;
+	border: none;
+	border-bottom: 1px solid lightgray;
+	background-color: transparent;
+}
+QComboBox:hover {
+	border-bottom: 1px solid gray;
+}
+QComboBox:focus {
+	border-bottom: 1px solid rgb(18, 183, 245);
+}
+QComboBox::drop-down {
+	background-color: transparent;    
+	width: 60px;
+	height: 40px;               
+}
+QComboBox::down-arrow {
+	
+	image: url(:/1/images/down_arrow.png);
+	width: 60px;
+	height: 20px;
+}
+QComboBox QAbstractItemView {
+	min-height: 60px;
+}
+QComboBox QAbstractItemView:item {
+	color: lightblue;
+}</string>
+   </property>
+   <property name="editable">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>90</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>宋体</family>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 0, 0);</string>
+   </property>
+   <property name="text">
+    <string>资产名称：</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>140</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>宋体</family>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 0, 0);</string>
+   </property>
+   <property name="text">
+    <string>资产编号：</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>200</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>宋体</family>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 0, 0);</string>
+   </property>
+   <property name="text">
+    <string>存放地点：</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="serch_bt">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>390</y>
+     <width>111</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+	background-color: rgb(33, 174, 250);
+	border-radius: 10px;
+	color: white;
+}
+QPushButton:hover {
+	background-color: rgb(72, 203, 250);
+}
+QPushButton:pressed {
+	background-color: rgb(85, 85, 255);
+}</string>
+   </property>
+   <property name="text">
+    <string>查询</string>
+   </property>
+   <property name="icon">
+    <iconset resource="../login.qrc">
+     <normaloff>:/1/images/dp.png</normaloff>:/1/images/dp.png</iconset>
+   </property>
+   <property name="shortcut">
+    <string>Return</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="showmain_bt">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>560</y>
+     <width>261</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+	background-color: rgb(33, 174, 250);
+	border-radius: 5px;
+	color: white;
+}
+QPushButton:hover {
+	background-color: rgb(72, 203, 250);
+}
+QPushButton:pressed {
+	background-color: rgb(85, 85, 255);
+}</string>
+   </property>
+   <property name="text">
+    <string>显示查询结果</string>
+   </property>
+   <property name="flat">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_12">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>10</y>
+     <width>101</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Adobe Devanagari</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>资产查询</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="back">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>75</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+	background-color: rgb(33, 174, 250);
+	border-radius: 10px;
+	color: white;
+}
+QPushButton:hover {
+	background-color: rgb(72, 203, 250);
+}
+QPushButton:pressed {
+	background-color: rgb(85, 85, 255);
+}</string>
+   </property>
+   <property name="text">
+    <string>返回主界面</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>400</y>
+     <width>71</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>模糊搜索</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="QR">
+   <property name="geometry">
+    <rect>
+     <x>700</x>
+     <y>30</y>
+     <width>111</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+	background-color: rgb(33, 174, 250);
+	border-radius: 5px;
+	color: white;
+}
+QPushButton:hover {
+	background-color: rgb(72, 203, 250);
+}
+QPushButton:pressed {
+	background-color: rgb(85, 85, 255);
+}</string>
+   </property>
+   <property name="text">
+    <string>扫一扫</string>
+   </property>
+   <property name="flat">
+    <bool>false</bool>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../login.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>back</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>back_mainfunction()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>37</x>
+     <y>32</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-59</x>
+     <y>34</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>Form</receiver>
+   <slot>mohu_sherch()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>490</x>
+     <y>414</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>926</x>
+     <y>453</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>QR</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>saoyisao()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>767</x>
+     <y>84</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>887</x>
+     <y>81</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>itemname_cb</sender>
+   <signal>editTextChanged(QString)</signal>
+   <receiver>Form</receiver>
+   <slot>serch_btn_enable()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>231</x>
+     <y>95</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-64</x>
+     <y>104</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>itemID_cb</sender>
+   <signal>editTextChanged(QString)</signal>
+   <receiver>Form</receiver>
+   <slot>serch_btn_enable()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>186</x>
+     <y>163</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-109</x>
+     <y>163</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>item_loca_cb</sender>
+   <signal>editTextChanged(QString)</signal>
+   <receiver>Form</receiver>
+   <slot>serch_btn_enable()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>243</x>
+     <y>231</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-106</x>
+     <y>227</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>serch_bt</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>serch_check()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>415</x>
+     <y>413</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1036</x>
+     <y>417</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>showmain_bt</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>recently_serched()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>459</x>
+     <y>590</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>961</x>
+     <y>559</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>back_mainfunction()</slot>
+  <slot>recently_serched()</slot>
+  <slot>serch_check()</slot>
+  <slot>serch_btn_enable()</slot>
+  <slot>mohu_sherch()</slot>
+  <slot>saoyisao()</slot>
+ </slots>
+</ui>
